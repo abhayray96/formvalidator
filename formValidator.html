@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormSubmit </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="alert alert-success fade" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger fade" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div class="container my-3">
+        <h1 style="text-align: center;"><b>Welcome To Tour & Travel Group</b></h1>
+        <h3 style="text-align: center;"><u>Submit your delails here</u></h3>
+        <div class="mb-3 my-3 row">
+            <label for="Name" class="col-sm-2 col-form-label">NAME</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class=" invalid-feedback">Please Enter a valid Name</div>
+        </div>
+        <div class="mb-3 row">
+            <label for="email" class="col-sm-2 col-form-label">EMAIL</label>
+            <div class="col-sm-5">
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email id">
+            </div>
+            <div class="invalid-feedback">Please Enter a valid Email address</div>
+        </div>
+        <div class="mb-3 row">
+            <label for="phone" class="col-sm-2 col-form-label">PHONE NO.</label>
+            <div class="col-sm-5">
+                <input type="phonenumber" class="form-control" id="phonenumber" placeholder="+91 **********">
+            </div>
+            <div class="invalid-feedback">Please Enter a valid phone number</div>
+        </div>
+        <div class="mb-3 row">
+            <label for="destination" class="col-sm-2 col-form-label">DESTINATION</label>
+            <div class="col-sm-5">
+                <input class="form-control " list="datalistOptions" id="destination">
+            </div>
+            <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+            </datalist>
+        </div>
+        <div class="my-3 row">
+            <label for="comments" class="col-sm-2 col-form-label">COMMENTS</label>
+            <div class="col-sm-5">
+                <textarea class="form-control" name="textarea" id="textarea" cols="50" rows="2"
+                    placeholder="leave a comment below"></textarea>
+            </div>
+        </div>
+        <button type="button" class="btn btn-success">Success</button>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="formValidator.html"></script>
+</body>
+
+</html>
